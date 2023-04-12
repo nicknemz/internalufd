@@ -89,3 +89,21 @@ local function LEDTTE_fake_script() -- Clear.LocalScript
 	end)
 end
 coroutine.wrap(LEDTTE_fake_script)()
+
+--the toggle
+
+local Open = false
+
+local UserInputService = game:GetService("UserInputService")
+
+UserInputService.InputBegan:Connect(function(KeyCode)
+    if KeyCode.KeyCode == Enum.KeyCode.Z then 
+        if Open == true then
+   Gui.Visible = true
+   Open = false
+   else
+       Gui.Visible = false
+       Open = true
+       end
+end
+end)
