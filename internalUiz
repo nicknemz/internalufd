@@ -1,0 +1,386 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local execute = Instance.new("TextButton")
+local Clear = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local text = Instance.new("TextLabel")
+local AntiDrag = Instance.new("Frame")
+local Info = Instance.new("Frame")
+local text_2 = Instance.new("TextLabel")
+local AntiDrag_2 = Instance.new("Frame")
+local Creditspart = Instance.new("TextLabel")
+local Creditspart_2 = Instance.new("TextLabel")
+local text_3 = Instance.new("TextLabel")
+local text_4 = Instance.new("TextLabel")
+local ScriptHub = Instance.new("Frame")
+local watermark = Instance.new("TextLabel")
+local AntiDrag_3 = Instance.new("Frame")
+local VapeV4 = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local VGHUB = Instance.new("Frame")
+local TextButton_2 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local InfinteYeld = Instance.new("Frame")
+local TextButton_3 = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local MSDOORS = Instance.new("Frame")
+local TextButton_4 = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local OWLHUB = Instance.new("Frame")
+local TextButton_5 = Instance.new("TextButton")
+local TextLabel_5 = Instance.new("TextLabel")
+local dim = Instance.new("Frame")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+dim.Name = "dim"
+dim.Parent = ScreenGui
+dim.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+dim.BackgroundTransparency = 0.500
+dim.Position = UDim2.new(0, 0, -0.0076923077, 0)
+dim.Size = UDim2.new(0, 2147483647, 0, 2147483647)
+dim.Visible = true
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Main.Position = UDim2.new(0.111434817, 0, 0.122981369, 0)
+Main.Size = UDim2.new(0, 697, 0, 248)
+Main.Active = true
+Main.Draggable = true
+
+execute.Name = "execute"
+execute.Parent = Main
+execute.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+execute.Position = UDim2.new(0.0204171743, 0, 0.86304003, 0)
+execute.Size = UDim2.new(0, 104, 0, 32)
+execute.Font = Enum.Font.SourceSans
+execute.Text = "execute"
+execute.TextColor3 = Color3.fromRGB(250, 250, 250)
+execute.TextSize = 26.000
+
+Clear.Name = "Clear"
+Clear.Parent = Main
+Clear.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Clear.Position = UDim2.new(0.197991401, 0, 0.863072336, 0)
+Clear.Size = UDim2.new(0, 104, 0, 32)
+Clear.Font = Enum.Font.SourceSans
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(250, 250, 250)
+Clear.TextSize = 26.000
+
+TextBox.Parent = Main
+TextBox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextBox.Position = UDim2.new(-0.00143472024, 0, 0.144578308, 0)
+TextBox.Size = UDim2.new(0, 697, 0, 172)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(250, 250, 250)
+TextBox.TextSize = 22.000
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+text.Name = "text"
+text.Parent = Main
+text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+text.BackgroundTransparency = 1.000
+text.Position = UDim2.new(0.42079854, 0, -0.00100402534, 0)
+text.Size = UDim2.new(0, 110, 0, 34)
+text.Font = Enum.Font.SourceSans
+text.Text = "EzSploit"
+text.TextColor3 = Color3.fromRGB(250, 250, 250)
+text.TextSize = 43.000
+
+AntiDrag.Name = "AntiDrag"
+AntiDrag.Parent = Main
+AntiDrag.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+AntiDrag.BackgroundTransparency = 1.000
+AntiDrag.Position = UDim2.new(0, 0, 0.839357436, 0)
+AntiDrag.Size = UDim2.new(0, 696, 0, 41)
+
+Info.Name = "Info"
+Info.Parent = ScreenGui
+Info.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Info.Position = UDim2.new(0.110706486, 0, 0.447204977, 0)
+Info.Size = UDim2.new(0, 697, 0, 249)
+Info.Active = true
+Info.Draggable = true
+
+text_2.Name = "text"
+text_2.Parent = Info
+text_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+text_2.BackgroundTransparency = 1.000
+text_2.Position = UDim2.new(0.42079854, 0, -0.00100402534, 0)
+text_2.Size = UDim2.new(0, 110, 0, 34)
+text_2.Font = Enum.Font.SourceSans
+text_2.Text = "Info"
+text_2.TextColor3 = Color3.fromRGB(250, 250, 250)
+text_2.TextSize = 43.000
+
+AntiDrag_2.Name = "AntiDrag"
+AntiDrag_2.Parent = Info
+AntiDrag_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+AntiDrag_2.Position = UDim2.new(0, 0, 0.140562251, 0)
+AntiDrag_2.Size = UDim2.new(0, 696, 0, 212)
+
+Creditspart.Name = "Creditspart"
+Creditspart.Parent = AntiDrag_2
+Creditspart.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Creditspart.BackgroundTransparency = 1.000
+Creditspart.Position = UDim2.new(0.456668615, 0, 0.497954071, 0)
+Creditspart.Size = UDim2.new(0, 62, 0, 34)
+Creditspart.Font = Enum.Font.SourceSans
+Creditspart.Text = "mikustodown#2945 (aka. mikusdev) - creator and main dev"
+Creditspart.TextColor3 = Color3.fromRGB(250, 250, 250)
+Creditspart.TextSize = 28.000
+
+Creditspart_2.Name = "Creditspart"
+Creditspart_2.Parent = AntiDrag_2
+Creditspart_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Creditspart_2.BackgroundTransparency = 1.000
+Creditspart_2.Position = UDim2.new(0.453795075, 0, 0.700538039, 0)
+Creditspart_2.Size = UDim2.new(0, 62, 0, 34)
+Creditspart_2.Font = Enum.Font.SourceSans
+Creditspart_2.Text = "Onk#9718 (aka. nicknamez) - helper , beta tester and internal ui maker"
+Creditspart_2.TextColor3 = Color3.fromRGB(250, 250, 250)
+Creditspart_2.TextSize = 28.000
+
+text_3.Name = "text"
+text_3.Parent = AntiDrag_2
+text_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+text_3.BackgroundTransparency = 1.000
+text_3.Position = UDim2.new(0.141030237, 0, 0.0544631332, 0)
+text_3.Size = UDim2.new(0, 499, 0, 61)
+text_3.Font = Enum.Font.SourceSans
+text_3.Text = "Thanks for using EzSploit!"
+text_3.TextColor3 = Color3.fromRGB(250, 250, 250)
+text_3.TextSize = 55.000
+text_3.TextXAlignment = Enum.TextXAlignment.Left
+text_3.TextYAlignment = Enum.TextYAlignment.Top
+
+text_4.Name = "text"
+text_4.Parent = AntiDrag_2
+text_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+text_4.BackgroundTransparency = 1.000
+text_4.Position = UDim2.new(0.0563775413, 0, 0.337822914, 0)
+text_4.Size = UDim2.new(0, 110, 0, 34)
+text_4.Font = Enum.Font.SourceSans
+text_4.Text = "Credits:"
+text_4.TextColor3 = Color3.fromRGB(250, 250, 250)
+text_4.TextSize = 30.000
+
+ScriptHub.Name = "ScriptHub"
+ScriptHub.Parent = ScreenGui
+ScriptHub.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+ScriptHub.Position = UDim2.new(0.632192254, 0, 0.122981369, 0)
+ScriptHub.Size = UDim2.new(0, 264, 0, 512)
+ScriptHub.Active = true
+ScriptHub.Draggable = true
+
+watermark.Name = "watermark"
+watermark.Parent = ScriptHub
+watermark.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+watermark.BackgroundTransparency = 1.000
+watermark.Position = UDim2.new(0.28822279, 0, -0.00100402534, 0)
+watermark.Size = UDim2.new(0, 110, 0, 34)
+watermark.Font = Enum.Font.SourceSans
+watermark.Text = "scripthub"
+watermark.TextColor3 = Color3.fromRGB(250, 250, 250)
+watermark.TextSize = 43.000
+
+AntiDrag_3.Name = "AntiDrag"
+AntiDrag_3.Parent = ScriptHub
+AntiDrag_3.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+AntiDrag_3.Position = UDim2.new(2.31193781e-07, 0, 0.0703124702, 0)
+AntiDrag_3.Size = UDim2.new(0, 264, 0, 476)
+
+VapeV4.Name = "VapeV4"
+VapeV4.Parent = AntiDrag_3
+VapeV4.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+VapeV4.Position = UDim2.new(0.00757552637, 0, 0.0146566406, 0)
+VapeV4.Size = UDim2.new(0, 262, 0, 48)
+
+TextButton.Parent = VapeV4
+TextButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextButton.Position = UDim2.new(0.775510192, 0, 0.604166687, 0)
+TextButton.Size = UDim2.new(0, 55, 0, 19)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Run"
+TextButton.TextColor3 = Color3.fromRGB(250, 250, 250)
+TextButton.TextSize = 14.000
+TextButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+TextLabel.Parent = VapeV4
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0204081628, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 238, 0, 29)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Vape v4"
+TextLabel.TextColor3 = Color3.fromRGB(250, 250, 250)
+TextLabel.TextSize = 24.000
+
+VGHUB.Name = "VG HUB"
+VGHUB.Parent = AntiDrag_3
+VGHUB.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+VGHUB.Position = UDim2.new(0.00378764793, 0, 0.130186439, 0)
+VGHUB.Size = UDim2.new(0, 263, 0, 48)
+
+TextButton_2.Parent = VGHUB
+TextButton_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextButton_2.Position = UDim2.new(0.775510192, 0, 0.604166687, 0)
+TextButton_2.Size = UDim2.new(0, 55, 0, 19)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Run"
+TextButton_2.TextColor3 = Color3.fromRGB(250, 250, 250)
+TextButton_2.TextSize = 14.000
+TextButton_2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+TextLabel_2.Parent = VGHUB
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0163265299, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 238, 0, 29)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "VG HUB"
+TextLabel_2.TextColor3 = Color3.fromRGB(250, 250, 250)
+TextLabel_2.TextSize = 24.000
+
+InfinteYeld.Name = "Infinte Yeld"
+InfinteYeld.Parent = AntiDrag_3
+InfinteYeld.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+InfinteYeld.Position = UDim2.new(0.0037876477, 0, 0.474379599, 0)
+InfinteYeld.Size = UDim2.new(0, 263, 0, 48)
+
+TextButton_3.Parent = InfinteYeld
+TextButton_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextButton_3.Position = UDim2.new(0.775510192, 0, 0.604166687, 0)
+TextButton_3.Size = UDim2.new(0, 55, 0, 19)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Run"
+TextButton_3.TextColor3 = Color3.fromRGB(250, 250, 250)
+TextButton_3.TextSize = 14.000
+TextButton_3.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+TextLabel_3.Parent = InfinteYeld
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.0163265299, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 238, 0, 29)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Infinite Yeld"
+TextLabel_3.TextColor3 = Color3.fromRGB(250, 250, 250)
+TextLabel_3.TextSize = 24.000
+
+MSDOORS.Name = "MSDOORS"
+MSDOORS.Parent = AntiDrag_3
+MSDOORS.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MSDOORS.Position = UDim2.new(0.0037876477, 0, 0.360950619, 0)
+MSDOORS.Size = UDim2.new(0, 263, 0, 48)
+
+TextButton_4.Parent = MSDOORS
+TextButton_4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextButton_4.Position = UDim2.new(0.775510192, 0, 0.604166687, 0)
+TextButton_4.Size = UDim2.new(0, 55, 0, 19)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "Run"
+TextButton_4.TextColor3 = Color3.fromRGB(250, 250, 250)
+TextButton_4.TextSize = 14.000
+TextButton_4.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSDOORS.lua"),true))()
+end)
+
+TextLabel_4.Parent = MSDOORS
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.0163265299, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0, 238, 0, 29)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "MSDOORS"
+TextLabel_4.TextColor3 = Color3.fromRGB(250, 250, 250)
+TextLabel_4.TextSize = 24.000
+
+OWLHUB.Name = "OWL HUB"
+OWLHUB.Parent = AntiDrag_3
+OWLHUB.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+OWLHUB.Position = UDim2.new(0.0037876477, 0, 0.245273113, 0)
+OWLHUB.Size = UDim2.new(0, 263, 0, 48)
+
+TextButton_5.Parent = OWLHUB
+TextButton_5.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextButton_5.Position = UDim2.new(0.775510192, 0, 0.604166687, 0)
+TextButton_5.Size = UDim2.new(0, 55, 0, 19)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "Run"
+TextButton_5.TextColor3 = Color3.fromRGB(250, 250, 250)
+TextButton_5.TextSize = 14.000
+TextButton_5.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+TextLabel_5.Parent = OWLHUB
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.0244897939, 0, 0, 0)
+TextLabel_5.Size = UDim2.new(0, 238, 0, 29)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "OWL HUB"
+TextLabel_5.TextColor3 = Color3.fromRGB(250, 250, 250)
+TextLabel_5.TextSize = 24.000
+
+-- Scripts:
+
+local function ABKUIS_fake_script() -- execute.LocalScript 
+	local script = Instance.new('LocalScript', execute)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(script.Parent.Parent.TextBox.text)()
+	end)
+end
+coroutine.wrap(ABKUIS_fake_script)()
+local function JUKOAY_fake_script() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript', Clear)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.TextBox.Text = ''
+	end)
+end
+coroutine.wrap(JUKOAY_fake_script)()
+
+--the toggle
+
+local Open = false
+
+local UserInputService = game:GetService("UserInputService")
+
+UserInputService.InputBegan:Connect(function(KeyCode)
+	if KeyCode.KeyCode == Enum.KeyCode.Z then 
+		if Open == true then
+			Main.Visible = true
+			Info.Visible = true
+			ScriptHub.Visible = true
+			dim.Visible = true
+			Open = false
+		else
+			Main.Visible = false
+			Info.Visible = false
+			ScriptHub.Visible = false
+			dim.Visible = false
+			Open = true
+		end
+	end
+end)
