@@ -368,7 +368,7 @@ local Open = false
 local UserInputService = game:GetService("UserInputService")
 
 UserInputService.InputBegan:Connect(function(KeyCode)
-	if KeyCode.KeyCode == Enum.KeyCode.Z then 
+    if KeyCode.KeyCode == Enum.KeyCode.Insert then 
 		if Open == true then
 			Main.Visible = true
 			Info.Visible = true
