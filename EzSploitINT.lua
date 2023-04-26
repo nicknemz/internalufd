@@ -76,6 +76,8 @@ MAIN.Parent = ScreenGui
 MAIN.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 MAIN.Position = UDim2.new(0.076870583, 0, 0.0509031191, 0)
 MAIN.Size = UDim2.new(0, 1101, 0, 464)
+MAIN.Active = true
+MAIN.Draggable = true
 
 TabHolder.Name = "TabHolder"
 TabHolder.Parent = MAIN
